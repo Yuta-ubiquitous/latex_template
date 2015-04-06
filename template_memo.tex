@@ -1,0 +1,39 @@
+\documentclass[12pt,oneside, a4paper]{jarticle}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+
+% User Settings
+\newcommand{\titlename}{Document's title}
+\newcommand{\myname}{Yuta Takahashi}
+
+\newcommand{\makemytitle}{
+\vspace*{0truemm}
+\begin{center}
+  \LARGE\titlename
+\end{center}
+\begin{flushright}
+  \myname
+\end{flushright}
+}
+
+\pagestyle{fancy}
+\lhead{}
+\rhead{\titlename}
+\cfoot{\thepage}
+\rfoot{\today}
+
+\renewcommand{\figurename}{Fig}
+\renewcommand{\tablename}{Tab}
+
+% To path the fancyhdr warning.
+\setlength{\headheight}{17pt}
+
+\begin{document}
+\makemytitle
+\section{section}
+This is my writing.
+\end{document}
+
+\begin{document}
+\end{document}
